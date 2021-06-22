@@ -1,4 +1,5 @@
 # Choose your own adventure template
+## Made for Majed K.
 
 Each script represents a branch. Your very first one should be called something like **Start** or something similar to that. This would be the file you start executing from. Everything will run from this central terminal.
 
