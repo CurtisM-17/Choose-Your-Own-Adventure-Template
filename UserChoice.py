@@ -1,12 +1,14 @@
 def user_choice(choice_map):
-	map_items = choice_map.items()
+	map_items = choice_map.items() # Reference the choice map dictionary
 
+	# Create the string that will display the choices to the user
 	message_string = ""
 	for display, choice_info in map_items:
 		if message_string:
 			message_string += ", "
 		message_string += display + ' ("' + choice_info[0] + '")'
 
+	# Get the user's input and make sure it's one of the choices
 	def get_choice():
 		choice = input(message_string + ": ")
 		selected_successfully = False
@@ -23,5 +25,3 @@ def user_choice(choice_map):
 			get_choice()
 
 	get_choice()
-
-	#choice = input(choice_map)
