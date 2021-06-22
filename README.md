@@ -16,8 +16,8 @@ def branch(): # Should be named branch for consistency
 	print("Message that the user will read. You can do anything you want here.")
 
 	user_choice({ # Reference the user_choice module
-		"Open the door": ["open", First_First.branch],
-		"Do the barrel roll": ["roll", First_Second.branch]
+		"Open the door": ["open", first_choice_module.branch],
+		"Do the barrel roll": ["roll", first_choice_module.branch]
 	})
 ```
 
