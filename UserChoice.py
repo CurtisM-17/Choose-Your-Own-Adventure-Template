@@ -13,7 +13,7 @@ def user_choice(choice_map):
 
 		for _, choice_info in map_items:
 			if choice_info[0].lower() == choice.lower():
-				print("-"*15) # Separates the line so the user can easily see
+				print("-"*45) # Separates the line so the user can easily see
 				choice_info[1]()
 				selected_successfully = True
 				break
