@@ -7,7 +7,7 @@ def branch():
 	print("You come across a large door.")
 	user_choice({
 		"Open the door": ["open", First_First.branch],
-		"Do the barrel roll": ["roll", First_Second.branch]
+		"Do a barrel roll": ["roll", First_Second.branch]
 	})
 
 if __name__ == "__main__":

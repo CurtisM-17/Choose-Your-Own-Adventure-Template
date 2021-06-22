@@ -17,7 +17,7 @@ def branch(): # Should be named branch for consistency
 
 	user_choice({ # Reference the user_choice module
 		"Open the door": ["open", first_choice_module.branch],
-		"Do the barrel roll": ["roll", first_choice_module.branch]
+		"Do a barrel roll": ["roll", first_choice_module.branch]
 	})
 ```
 
