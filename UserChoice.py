@@ -1,4 +1,4 @@
-def user_choice(choice_map):
+def user_choice(choice_map: dict, *other_variables):
 	map_items = choice_map.items() # Reference the choice map dictionary
 
 	# Create the string that will display the choices to the user
@@ -16,7 +16,7 @@ def user_choice(choice_map):
 		for _, choice_info in map_items:
 			if choice_info[0].lower() == choice.lower():
 				print("-"*45) # Separates the line so the user can easily see
-				choice_info[1]()
+				choice_info[1](*other_variables)
 				selected_successfully = True
 				break
 

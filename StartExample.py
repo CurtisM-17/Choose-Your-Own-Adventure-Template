@@ -8,7 +8,7 @@ def branch():
 	user_choice({
 		"Open the door": ["open", First_First.branch],
 		"Do a barrel roll": ["roll", First_Second.branch]
-	})
+	}, "optional variable 1", "optional variable 2", "we can just do this forever")
 
 if __name__ == "__main__":
 	branch() # The ONLY one of these to call immediately.

@@ -1,4 +1,4 @@
 # StartExample, "open the door"
 
-def branch():
-	print('first choice')
+def branch(a, b, c):
+	print(a, b, c) # Prints all three optional arguments, although you can have anywhere from zero to infinity

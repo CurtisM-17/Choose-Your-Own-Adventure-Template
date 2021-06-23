@@ -18,7 +18,7 @@ def branch(): # Should be named branch for consistency
 	user_choice({ # Reference the user_choice module
 		"Open the door": ["open", first_choice_module.branch],
 		"Do a barrel roll": ["roll", second_choice_module.branch]
-	})
+	}, "any amount of optional variables you want that will be sent to both functions regardless")
 ```
 
 The most important part to understand is the argument you pass into user_choice. I don't know if you're familiar with this, but it's a dictionary representing a custom key and value pair. In our case, the key is the action name, and the value is a list containing two pieces of information:
