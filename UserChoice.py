@@ -1,3 +1,5 @@
+constants = [] # Empty list of constants
+
 def user_choice(choice_map: dict, *other_variables):
 	map_items = choice_map.items() # Reference the choice map dictionary
 
@@ -16,7 +18,7 @@ def user_choice(choice_map: dict, *other_variables):
 		for _, choice_info in map_items:
 			if choice_info[0].lower() == choice.lower():
 				print("-"*45) # Separates the line so the user can easily see
-				choice_info[1](*other_variables)
+				choice_info[1](*constants, *other_variables)
 				selected_successfully = True
 				break
 
@@ -25,3 +27,8 @@ def user_choice(choice_map: dict, *other_variables):
 			get_choice()
 
 	get_choice()
+
+# Define constants that are automatically passed through each choice
+def add_constants(*new_constants):
+	for const in new_constants:
+		constants.append(const)

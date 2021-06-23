@@ -1,9 +1,12 @@
 # Modules
-from UserChoice import user_choice
+from UserChoice import *
 import First_First
 import First_Second
 
 def branch():
+	name = "Curtis"
+	iq = 210
+	add_constants(name, iq)
 	print("You come across a large door.")
 	user_choice({
 		"Open the door": ["open", First_First.branch],
